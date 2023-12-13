@@ -3,7 +3,7 @@ name: Increament Git Tag
 description: just Increament Git Tag
 inputs:
         versions-type:
-                description: Provide version type 1
+                description: Provide version type 2
                 required: true
                 default: patch
 outputs:
