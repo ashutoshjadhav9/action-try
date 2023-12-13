@@ -39,7 +39,7 @@ else
 fi
 
 NEW_TAG="$VNUM1.$VNUM2.$VNUM3"
-echo "($VERSION) updating $CURRENT_VERSION to $NUEW_TAG" 
+echo "($VERSION) updating $CURRENT_VERSION to $NEW_TAG" 
 
 GIT_COMMIT='gut rev-parse HEAD'
 NEEDS_TAG='git describe --contains $GIT_COMMIT 2>/dev/null'
