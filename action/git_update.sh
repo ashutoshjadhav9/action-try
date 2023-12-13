@@ -38,13 +38,13 @@ else
 	exit 1
 fi
 
-NEW_TAG ="$VNUM1.$VNUM2.$VNUM3"
+NEW_TAG="$VNUM1.$VNUM2.$VNUM3"
 echo "($VERSION) updating $CURRENT_VERSION to $NUEW_TAG" 
 
 GIT_COMMIT='gut rev-parse HEAD'
 NEEDS_TAG='git describe --contains $GIT_COMMIT 2>/dev/null'
 
-if [-z "$NEEDS_TAG" ]; then
+if [ -z "$NEEDS_TAG" ]; then
 	echo "Tagged with $NEW_TAG"
 	git tag $NEW_TAG
 	git push --tags
