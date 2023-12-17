@@ -1,14 +1,13 @@
----
-name: Increament Git Tag
-description: just Increament Git Tag
+name: 'Hello World'
+description: 'Greet someone and record the time'
 inputs:
-        versions-type:
-                description: Provide version type 2
-                required: true
-                default: patch
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
 outputs:
-        new-version:
-                description: Increased version
+  time: # id of output
+    description: 'The time we greeted you'
 runs:
-        using: node12
-        main: action/index.js
+  using: 'node20'
+  main: 'index.js'
