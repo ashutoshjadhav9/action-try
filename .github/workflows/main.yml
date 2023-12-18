@@ -2,7 +2,7 @@ on: [push]
 
 jobs:
   hello_world_job:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     name: A job to say hello
     steps:
         - name: Checkout
@@ -11,7 +11,7 @@ jobs:
 
         - name: Run my Action
           id: run-action
-          uses: actions/javascript-action@v1 # Commit with the `v1` tag
+          uses: ashutoshjadhav9/action-try@v1.1 # Commit with the `v1` tag
           with:
                 milliseconds: 1000
 
